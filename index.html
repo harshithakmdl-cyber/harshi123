@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>H&M Style Website</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Navbar */
+nav {
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+}
+
+/* Sections */
+.section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Products */
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 220px;
+    margin: 10px;
+}
+.card img {
+    width: 100%;
+}
+button {
+    padding: 8px 12px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Login */
+.login-box {
+    max-width: 300px;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+
+<script>
+function addToCart(item) {
+    alert(item + " added to cart!");
+}
+
+function login() {
+    alert("Login successful (demo only)");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>H&M</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">Login</a>
+</nav>
+
+<div class="hero">
+    New Collection 2026
+</div>
+
+<div class="section">
+    <h2>About Fashion Industry</h2>
+    <p>
+        Fashion industry deals with design, production and marketing of clothing.
+        It reflects culture, trends and creativity. Online platforms have made fashion
+        more accessible worldwide.
+    </p>
+</div>
+
+<section class="products">
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h3>T-Shirt</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('T-Shirt')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h3>Jeans</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Jeans')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <h3>Jacket</h3>
+        <p>₹1999</p>
+        <button onclick="addToCart('Jacket')">Add to Cart</button>
+    </div>
+</section>
+
+<div class="section">
+    <h2>Login</h2>
+    <div class="login-box">
+        <input type="text" placeholder="Username"><br>
+        <input type="password" placeholder="Password"><br>
+        <button onclick="login()">Login</button>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Importance of E-Commerce</h2>
+    <p>
+        E-commerce allows users to shop anytime and anywhere. It provides convenience,
+        better price comparison and a wide variety of products.
+    </p>
+</div>
+
+<footer>
+    © 2026 H&M Style Website | College Project
+</footer>
+
+</body>
+</html>
